@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #D4AF37;
+    --gold-light: #F5E6B8;
+    --gold-dark: #996515;
+    --bg-dark: #08080A;
+    --surface-dark: #0F0F14;
+    --card-dark: #14141B;
+  }
+
+  body {
+    background-color: #08080A;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans-custom {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-arabic {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Luxury gold shimmer & gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF0BD 0%, #D4AF37 50%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-hover-glow:hover {
+  box-shadow: 0 0 25px -4px rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080A;
+}
+::-webkit-scrollbar-thumb {
+  background: #272732;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
